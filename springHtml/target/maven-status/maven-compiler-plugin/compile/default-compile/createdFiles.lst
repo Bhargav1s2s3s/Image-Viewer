@@ -1,0 +1,6 @@
+com\example\springHtml\Service\UserService.class
+com\example\springHtml\Repository\UserRepo.class
+com\example\springHtml\Controller\welcomeController.class
+com\example\springHtml\Controller\AdminController.class
+com\example\springHtml\Model\UserModel.class
+com\example\springHtml\SpringHtmlApplication.class
