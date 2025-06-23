@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+
+<body>
+<form action="/main/access" method="post">
+    <input type="email" placeholder="Registered Email" name="email">
+    <input type="url" placeholder="image url" name="url">
+    <button type="submit">Upload</button>
+</form>
+
+<h2 th:text="'Welcome ' + ${fname} + '!'" style="text-align:center;"></h2>
+<img src="/Images/IMG_20250506_195030.jpg" alt="Loading" width="500">
+<img src="https://images.pexels.com/photos/1906658/pexels-photo-1906658.jpeg" alt="Loading" height= 300 width="500">
+<img src="https://i.postimg.cc/2SFfDSxN/jypaint.png" alt="Loading" height= 300 width="500">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLId31jnDpX72WdF8M-_wcNbvIGpc8UrsibQ&s.png" alt="Loading" height= 300 width="500">
+<img src="https://images.pexels.com/photos/30206677/pexels-photo-30206677/free-photo-of-charming-goat-portrait-in-thai-farm-setting.jpeg?auto=compress&cs=tinysrgb&w=600 " alt="Loading" height= 300 width="500">
+
+<div th:each="imageUrl : ${imageUrls}">
+    <img th:src="@{${imageUrl}}" alt="User Image" height="300" width="500">
+</div>
+
+<meta http-equiv="refresh" content="120">
+</body>
+</html>
