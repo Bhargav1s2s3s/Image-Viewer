@@ -1,0 +1,54 @@
+body {
+    background: #0a1b0e; /* dark green background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    background-color: #142e1e; /* dark green card */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #1d4030; /* deep green input background */
+    color: white;
+    font-size: 1em;
+    display: block;
+}
+
+input::placeholder {
+    color: #aaffaa;
+}
+
+button {
+    background: linear-gradient(to right, #56ab2f, #a8e063); /* green gradient */
+    border: none;
+    color: white;
+    padding: 14px 24px;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #a8e063, #56ab2f);
+}
